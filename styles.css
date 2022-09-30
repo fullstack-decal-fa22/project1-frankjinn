@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#profilePhoto{
+    max-width: 200px;
+}
+.socialsButton{
+    font: 15px Arial, sans-serif;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 192, 203);
+    border-radius: 10px;
+    margin: 10px;
+}
+.socialsButton:hover {
+    box-shadow: 3px 3px;
+    background-color: rgb(166, 125, 132);;
+}
+
+.workContainer{
+    flex-flow: column;
+}
+
+.workSample{
+    margin: 10px;
+    display: grid;
+    height: 100px;
+    width: 700px;
+    grid-template-columns: [col1-start] 25% [col1-end col2-start] 75% [col2-end];
+
+}
+
+.sampleImage{
+    max-height: 100px;
+    grid-column-start: col1-start;
+    grid-column-end: col1-end;
+}
+.sampleText{
+    background-color: beige;
+    margin-right: 10px;
+    text-align: center;
+    grid-column-start: col2-start;
+    grid-column-end: col2-end;
+}

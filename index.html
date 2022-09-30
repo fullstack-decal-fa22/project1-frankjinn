@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Frank Jin">
+    <title>Frank Jin</title>
+    <author>Author: Frank Jin</author>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function instagram(){
+            alert("Drop a follow!")
+            window.open(
+                "https://www.instagram.com/frankjinn_/", "_blank"
+            )
+        }
+        function otherContacts(){
+            alert("Email: frank.jin@berkeley.edu \nPhone number: 510-365-6435")
+        }
+        function emailList(){
+            var name = document.querySelector('#name').value;
+            var email = document.querySelector('#email').value;
+            alert(`Welcome ${name}. Your email: ${email} has been added.`)
+        }
+    </script>
+
+    <h1>About</h1>
+    <p>Hello I'm Frank Jin. A CS major at UC Berkeley. I'm interested in web development and machine learning.</p>
+    <img src="IMG_0679.jpg" id = "profilePhoto">
+    <br>
+    <p>For more information about my projects:</p>
+    <a target="_blank" href="work.html">Click here for past work.</a>
+    <br>
+    <p>My socials:</p>
+    <button onclick="instagram()" class="socialsButton">Insta</button>
+    <br>
+    <button onclick="otherContacts()"> Email and Phone </button>
+    <h2>Sign up for Email List</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text">
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="text">
+        <br>
+        <input type="submit" value="Submit" onclick="emailList()">
+    </form>
+
+</body>
+</html>
